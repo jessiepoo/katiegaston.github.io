@@ -4,7 +4,7 @@
 
     <head>
         <meta name="description", content="This is a page about Katie Gaston">
-        <meta name="keyword", content="Katie Gaston, pianist, producer">
+        <meta name="keyword", content="Katie gaston, pianist, ubc">
         <title>
             Katie Gaston
         </title>
@@ -32,7 +32,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="life.html">ABOUT</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a target="_blank" href="image-audio-video.html">MEDIA</a>
+                    <a href="image-audio-video.html">MEDIA</a>
                 </nav>
             </div>
             <div class="hero-inner">
@@ -41,7 +41,7 @@
                 <h2 data-aos="fade-up" data-aos-delay="700" data-aos-duration="1800">Pianist & Producer</h2>
             </div>
             <div class="btn-container">
-                <p id="codewithme">Contact me</p>
+                <p id="codewithme">contact me </p>
                 <p class="btn">&nbsp;</p>
             </div>
 
@@ -156,43 +156,45 @@
                     <path id="path5361" d="m 220.64211,56.481896 7.71881,58.753454 12.45015,-6.00217 z"/>
                   </svg>
                 
-                  <h1 id="quote" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">“The absence of limitations <br/> is the enemy of art.”</h1>
-                  
-                  
-                  <p data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">- Orson Welles
-                      
-                  </p>
+                    <h1>“The absence of limitations <br/> is the enemy of art.”</h1>
+                    <!-- id="quote" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1400" -->
+                    
+                    <p >- Orson Welles
+                        <!-- data-aos="fade-left" data-aos-delay="500" data-aos-duration="1400" -->
+                    </p>
                   
             </div>
-            <div class="secondsection">
-                <h1 data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">About Me</h1>
+
+            <div class="secondsection" id="aboutsection">
+                <h1>About Me</h1>
+                <!-- data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1300" -->
                 <div id="aboutsubsection">
-                    <img id="katiepic"  src="assets/katiepic.jpg" alt="Photo can not be displayed" data-aos="fade-right" data-aos-delay="105" data-aos-duration="1000">
-                    
+                    <img id="katiepic"  src="assets/katiepic.jpg" alt="Photo can not be displayed">
+                    <!-- data-aos="fade-right" data-aos-delay="105" data-aos-duration="1000" -->
                     <div id="description-div">
                         <div id="about-list">
                           
                                 <div >
-                                    <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                                        
+                                    <p >
+                                        <!-- data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" -->
                                         I am a Canadian student, musician, and writer. Born to Filipino <br/>and French parents, I currently reside in Vancouver, Canada.
                                     </p>
                                 </div>
                                <div>
-                                   <p data-aos="fade-up" data-aos-delay="140" data-aos-duration="1000"> 
-                                    
+                                   <p> 
+                                    <!-- data-aos="fade-up" data-aos-delay="140" data-aos-duration="1000" -->
                                     As a classically trained pianist, I share my love for music <br/>through  composing and working as an RCM certified teacher.
                                    </p>
                                </div>
                                <div> 
-                                   <p data-aos="fade-up" data-aos-delay="190" data-aos-duration="1000">
-                                    
+                                   <p >
+                                    <!-- data-aos="fade-up" data-aos-delay="190" data-aos-duration="1000" -->
                                     I am passionate about expression and language, not only <br/>through music but also in writing. I am currently pursuing a <br/>degree in English literature with goals of becoming a celebrated<br/> author.
                                    </p>
                                </div>
                                <div>  
-                                   <p data-aos="fade-up" data-aos-delay="215" data-aos-duration="1000" style="padding-top: 0.5em;">
-                                    
+                                   <p  style="padding-top: 0.5em;">
+                                    <!-- data-aos="fade-up" data-aos-delay="215" data-aos-duration="1000" -->
                                     When I am not making music, I am working on the next great <br/>Canadian novel and drinking too many iced matcha lattes.
                                    </p>
                                </div>
@@ -201,30 +203,72 @@
         
                 </div>
             </div>
-            
-            <div class="thirdsection" style="background-color: rgb(240, 240, 240);">
-                <h1 data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">My Projects</h1>
+            <div style="height:5.5em">
+                &nbsp;
+            </div>
 
-                <div id="podcastsection">
-                    <div class="item-holder" id="holder1">
-                        <div id="podcast1">
-                            <h3>KATIE GASTON AS  INTERVIEWER</h3>
-                        </div> 
-                    </div>
-                   
-                    <div class="item-holder" id="holder2">
-                        <div id="podcast2">
-                            <H3>KATE GAO AS <br/> INTERVIEWER</H3>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="thirdsection">
+                <h1>My Projects</h1>
 
             </div>
 
-          
-    </main>
 
-        <!-- <footer>
+
+            <!-- <div class="thirdsection">
+                <h1 id="my-projects" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1300">My projects</h1>
+
+                <h2 data-aos="fade-up" data-aos-delay="375" data-aos-duration="1000">CLICK TO VIEW PROJECTS ON GITHUB</h2>
+
+                <div class="thirdsubsection">
+                    <a  target="_blank" href="https://github.com/jessiepoo/mygastronomicaljourney"> 
+                         <div class="wrapper">
+                            <span class='text' >MY GASTRONOMICAL JOURNEY</span>
+                            <img 
+                            id="secondsectiongimg1" 
+                            src="assets/mygastronomicaljourneypic.png">
+                            
+                         </div>
+                    </a>
+                     <a  target="_blank" href="https://github.com/jessiepoo/mygastronomicaljourney"> 
+                         <div class="wrapper">
+                             <span class='text'>COMING SOON...</span>
+                             <img  class="appear" id="secondsectiongimg2" src="assets/black.JPG">
+                         </div>
+                    </a>
+                         
+                    <a  target="_blank" href="https://github.com/jessiepoo/mygastronomicaljourney"> 
+                        <div class="wrapper">
+                            <span class='text'>COMING SOON...</span>
+                            <img  id="secondsectiongimg2" src="assets/black.JPG">
+                        </div>
+                   </a>
+                </div>
+            </div> -->
+
+            <!-- <div class="fourthsection">
+                <h1>My Life</h1>
+                <div class="thirdsubsection">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                </div>
+                <div class="thirdsubsection">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                    <img src="assets/butchart1.JPG" alt="Picture cannot be displayed">
+                </div>
+
+            </div>
+            <div class="software-dev"></div> -->
+ 
+    <!-- </main>
+
+        <footer>
             <small>&copy; Copyright - All rights reserved.</small>
             <br />
         </footer> -->
@@ -244,9 +288,7 @@
 
         </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>   
-            AOS.init(); 
-         </script>
+       
           <script>
             var textWrapper = document.querySelector('.ml11 .letters');
   textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
@@ -407,6 +449,13 @@
     });
 
         </script>
+
+<script>   
+    AOS.init(); 
+    window.addEventListener('load', AOS.refresh)
+
+    // { once: true, }
+ </script>
 
     </body>
 
