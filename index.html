@@ -30,7 +30,7 @@
                 <nav>
                     <a href="#">HOME</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="life.html">ABOUT</a>
+                    <a id="about" href="life.html">ABOUT</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a target="_blank" href="image-audio-video.html">MEDIA</a>
                 </nav>
@@ -187,7 +187,7 @@
                                <div> 
                                    <p data-aos="fade-up" data-aos-delay="190" data-aos-duration="1000">
                                     
-                                    I am passionate about expression and language, not only <br/>through music but also in writing. I am currently pursuing a <br/>degree in English literature with goals of becoming a celebrated<br/> author.
+                                    I am passionate about expression and language, not only <br/>through music but also in writing. I am currently pursuing  <br/> a degree in English literature with goals of becoming a <br/> celebrated  author.
                                    </p>
                                </div>
                                <div>  
@@ -202,26 +202,50 @@
                 </div>
             </div>
             
-            <div class="thirdsection" style="background-color: rgb(240, 240, 240);">
+            <div class="thirdsection" style="background-color: rgb(250, 247, 252);">
                 <h1 data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">My Projects</h1>
 
                 <div id="podcastsection">
-                    <div class="item-holder" id="holder1">
+                    <div class="item-holder" id="holder1" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1100">
                         <div id="podcast1">
                             <h3>KATIE GASTON AS  INTERVIEWER</h3>
-                        </div> 
+                        </div>        
+                        <p id="podcastdescription1">Thematic Material in Soundtracks</p>
+                        <div id="mp3player1">
+                            <audio  controls autoplay="true" src="assets/katieinterviewer.mp3"></audio>
+                        </div>
                     </div>
                    
-                    <div class="item-holder" id="holder2">
+                    <div class="item-holder" id="holder2" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1100">
                         <div id="podcast2">
                             <H3>KATE GAO AS <br/> INTERVIEWER</H3>
+                        </div>
+                        <p id="podcastdescription2">EDM genres, styles, and elements</p>
+                        <div id="mp3player2">
+                            <audio controls autoplay="true" src="assets/kateinterviewer.mp3"></audio>
                         </div>
                     </div>
                 </div>
 
-            </div>
+                <div id="videosection" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/8gwmJGJIRiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
-          
+                <div id="audiosection" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
+                    <h2>Audio clip of "So it goes" provided below</h2>
+                    <audio controls autoplay="true" src="assets/kateinterviewer.mp3"></audio>
+
+                </div>
+                <div id="copyrightsection">
+                    <p id="copyright">Due to copyright, the movie scoring project is only available upon request</p>
+                </div>
+            </div>
+            <div class="fourthsection">
+                <h1 data-aos="zoom-in" data-aos-duration="600">CONNECT WITH ME</h1>
+                <div id="linkedin" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
+                    <a id="linkedinlink" target="_blank" href="http://linkedin.com/in/katiegaston">http://linkedin.com/in/katiegaston</a>
+                </div>
+            </div>
     </main>
 
         <!-- <footer>
@@ -229,20 +253,30 @@
             <br />
         </footer> -->
 
-    
-
         <script>
             $(function() {
 
-                $('.btn').click(function() {
+                $('.btn-container').click(function() {
                     $('html, body').animate({
-                        scrollTop: $('.secondsection').offset().top}, 1700);
+                        scrollTop: $('.fourthsection').offset().top}, 1700);
                    
                 })
             });
-               
 
         </script>
+
+<script>
+    $(function() {
+
+        $('#about').click(function() {
+            $('html, body').animate({
+                scrollTop: $('.secondsection').offset().top}, 1700);
+           
+        })
+    });
+
+</script>
+        
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>   
             AOS.init(); 

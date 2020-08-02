@@ -1,7 +1,7 @@
 
     html, body {
         margin:0;
-        font-family: 'Hind', sans-serif;
+        /* font-family:'Playfair Display SC', serif;f */
          /* overflow-x: hidden; */
 
       } 
@@ -107,7 +107,10 @@ nav a{
   z-index:1;
   padding:1em;
   letter-spacing: 0.3em;
-  padding-left: 2.4em;
+  padding-left: 1.7em;
+  /* font-family: 'Playfair Display SC', serif; */
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 
 
 }
@@ -241,7 +244,7 @@ svg {
 
 .secondsection{
     height: 50em;
-    background-color: rgb(184, 151, 163);
+    background-color: rgb(155, 146, 172);
     position: relative;
     /* display: flex; */
     justify-content: center;
@@ -372,8 +375,8 @@ svg {
 }
 
 .thirdsection{
-  background-color:rgba(255, 255, 255, 0.404);
-  height: 50em;
+  background-color:rgb(226, 218, 230);
+  height: 118em;
   position: relative;
   margin-top: 7.5em;
   text-align: center;
@@ -399,6 +402,7 @@ svg {
 #podcastsection{
   width: 90%;
   padding-top: 6em;
+  padding-bottom: 4em;
   position: relative;
   text-align: center;
   display: inline-block;
@@ -421,12 +425,75 @@ svg {
 }
 
 #holder1{
-  margin-right: 6em;
+  margin-right: 7em;
 }
 
 #holder2{
-  margin-left: 6em;
+  margin-left: 7em;
 }
+
+#mp3player1{
+  position:absolute;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height:50px;
+  margin-top: 11.5em;
+  margin-left: -1.55em;
+  visibility: hidden;
+  width: 17em;
+}
+#mp3player2{
+  position:absolute;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height:50px;
+  margin-top: 11.5em;
+  margin-left: -1.55em;
+  visibility: hidden;
+  width: 17em;
+}
+
+
+#holder1:hover #podcastdescription1{
+  z-index: 9;
+  visibility: visible;
+}
+
+#holder2:hover #podcastdescription2{
+  z-index: 9;
+  visibility: visible;
+}
+
+#holder1:hover #mp3player1{
+  z-index: 9;
+  visibility: visible;
+}
+
+#holder2:hover #mp3player2{
+  z-index: 9;
+  visibility: visible;
+}
+
+#podcast1{
+  position: absolute;
+  width: 20em;
+  background-image:url("../assets/sunset.jpg");
+  background-size:cover;
+  height: 20em;
+  
+  }
+
+#podcast2{
+  position: absolute;
+  width: 20em;
+  background-image: url("../assets/downtown.jpg");
+  background-size: cover;
+  height: 20em;
+}
+
+
 
 .item-holder:hover #podcast1{
   -ms-transform: scale(1.3);
@@ -440,40 +507,64 @@ svg {
    opacity:0.8;
    -webkit-filter: brightness(60%);
    -moz-filter: brightness(60%);
-
-
 }
 
-#podcast1{
-  position: absolute;
-  width: 20em;
-  background-image:url("../assets/sunset.jpg");
-  background-size:cover;
-  height: 20em;
+.item-holder:hover #podcast2{
+  -ms-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+   -moz-transform:scale(1,3);
+   transform: scale(1.3);
+   z-index:8;
+   transition-duration: 0.4s;
+   -webkit-box-shadow: 0 0 40px rgb(59, 59, 59);
+   box-shadow: 0 0 40px rgb(51, 51, 51);
+   opacity:0.8;
+   -webkit-filter: brightness(60%);
+   -moz-filter: brightness(60%);
+}
+
+
+  #podcastdescription1{
+    position:absolute;
+    z-index:1;
+    left: 0;
+    top: 0;
+    height:50px;
+    margin-top: 4em;
+    color: white;
+    visibility: hidden;
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI'
+  }
+
+
+  #podcastdescription2{
+    position:absolute;
+    z-index:1;
+    left: 0;
+    top: 0;
+    height:50px;
+    margin-top: 4em;
+    color: white;
+    visibility: hidden;
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI'
   
   }
-  
-}
 
-#podcast1:hover{
-  width: 22em;
-  height: 22em;
-  top:-1em;
-  left: -1em;
-  transition: ease;
-  transition-duration: 0.5s;
-  top:-5em;
-
-}
+  #mp3player1 audio{
+    width:23.05em;
+    height: 2.7em;
+  }
 
 
-#podcast2{
-  position: absolute;
-  width: 20em;
-  background-image: url("../assets/downtown.jpg");
-  background-size: cover;
-  height: 20em;
-}
+  #mp3player2 audio{
+    width:23.05em;
+    height: 2.7em;
+  }
+
 
 
 .item-holder:hover #podcast2{
@@ -496,6 +587,7 @@ svg {
   margin-top: 6em;
   letter-spacing: .2em;
   font-size: 1.3em;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -505,63 +597,115 @@ svg {
   font-size: 1.38em;
   margin-top: 5.58em;
   transition-duration: 0.2s;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
+#videosection{
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
 
+#video:hover{
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform:scale(1,3);
+  transform: scale(1.3);
+  z-index:8;
+  transition-duration: 0.4s;
+  -webkit-box-shadow: 0 0 40px rgb(59, 59, 59);
+  box-shadow: 0 0 40px rgb(51, 51, 51);
+}
 
-/* .thirdsubsection{
-    margin-top: 4.2em;
-    display: inline-block;
-    display: flex;
-    justify-content: space-between;
+#audiosection{
+  margin-top: 6em;
+  margin-bottom: 2em;
+  padding:1.5em;
+  /* border-style: solid; */
+  border-width: .1em;
+  width: 65%;
+  display: inline-block;
+  background-color: white;
+}
 
-    width: 80%;
-    margin-left:auto;
-    margin-right: auto;
-    
-} */
+#audiosection:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform:scale(1,2);
+  transform: scale(1.2);
+  z-index:8;
+  transition-duration: 0.4s;
+  -webkit-box-shadow: 0 0 40px rgb(59, 59, 59);
+  box-shadow: 0 0 40px rgb(51, 51, 51);
+}
 
+#audiosection h2{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:rgba(73, 73, 73, 0.425);
+  letter-spacing: .2em;
+  font-size: 1.2em;
+  padding-bottom: 2em;
+  padding-top: 1.3em;
+}
 
+#audiosection audio{
+  width:50%;
+  padding-bottom: 1.5em;
+}
 
+#copyrightsection{
+  margin-top: 5em;
+  width: 60%;
+  display:inline-block;
+  background-color: white;
+}
+
+#copyright{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:rgba(56, 56, 56, 0.425);
+  letter-spacing: .2em;
+  font-size: 1.2em;
+  margin: 3em;
+
+}
 
 .fourthsection{
-    height:45em;
+    height:100vh;
     width: 100%;
     text-align: center;
-    background-color:rgb(236, 236, 236);
+    background-color:rgb(115, 111, 126);
     margin-top:-25px;
+    position:absolute
 }
 
 .fourthsection h1{
-    font-size: 38px;
-    margin-left:auto;
-    margin-right: auto;
-    width: 7em;
-    padding-top: 3.3em;
-    padding-bottom: 0.15em;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 0.4em;
+  padding-top: 2.5em;
+  font-family: 'Playfair Display SC', serif;
+  margin-left:auto;
+  margin-right: auto;
+  width: fit-content;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.4em;
 }
 
-.fourthsubsection{
-    padding-top: 0.4em;
-    display: inline-block;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-
+#linkedin{
+  background-color:rgb(136, 132, 148);
+  width:70%;
+  height: 10em;
+  display: inline-block;
+  margin-top: 4em;
 
 }
 
-.fourthsection img{
-    width: 10.5rem;
-    padding-right: 0.54ex;
-    padding-left: 0.54ex;
-    
-}
+#linkedinlink{
+  color:white;
+  font-size: 1.3em;
+  margin-top: 3em;
+  text-align: center;
+  display: block;
 
+
+}
 
 
 
