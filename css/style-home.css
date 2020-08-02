@@ -29,12 +29,13 @@ position: absolute;
 font-family: 'Hind', sans-serif;
 }
 
-nav a{
+nav p{
   font-weight: lighter;
   font-size: 13px; 
   list-style: height 2.5;
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
 
 }
 
@@ -162,16 +163,16 @@ nav a{
 
 }
 
-.hero-image nav .active{
+.hero-image .navelement .active{
     color: #f3b6b68a;
     
 }
 
-.hero-image a{
+.navelement{
     color:white;
 }
 
-.hero-image a:hover{
+.hero-image .navelement:hover{
     color: #ffc8d296;
 }
 

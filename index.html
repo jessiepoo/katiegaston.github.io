@@ -28,11 +28,14 @@
         <section class="hero-image">
             <div class="first-nav">
                 <nav>
-                    <a href="#">HOME</a>
+                    <p class="navelement" id="home">HOME</p>
+                    <!-- <a href="#">HOME</a> -->
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a id="about" href="life.html">ABOUT</a>
+                    <p class="navelement" id="about">ABOUT</p>
+                    <!-- <a id="about" href="life.html">ABOUT</a> -->
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a target="_blank" href="image-audio-video.html">MEDIA</a>
+                    <p class="navelement" id="media">MEDIA</p>
+                    <!-- <a target="_blank" href="image-audio-video.html">MEDIA</a> -->
                 </nav>
             </div>
             <div class="hero-inner">
@@ -233,7 +236,7 @@
 
                 <div id="audiosection" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
                     <h2>Audio clip of "So it goes" provided below</h2>
-                    <audio controls autoplay="true" src="assets/kateinterviewer.mp3"></audio>
+                    <audio controls autoplay="true" src="assets/soitgoes.mp3"></audio>
 
                 </div>
                 <div id="copyrightsection">
@@ -268,6 +271,18 @@
 <script>
     $(function() {
 
+        $('#home').click(function() {
+            $('html, body').animate({
+                scrollTop: $('.heroimage').offset().top}, 1700);
+           
+        })
+    });
+
+</script>
+
+<script>
+    $(function() {
+
         $('#about').click(function() {
             $('html, body').animate({
                 scrollTop: $('.secondsection').offset().top}, 1700);
@@ -276,6 +291,19 @@
     });
 
 </script>
+
+<script>
+    $(function() {
+
+        $('#media').click(function() {
+            $('html, body').animate({
+                scrollTop: $('.thirdsection').offset().top}, 1700);
+           
+        })
+    });
+
+</script>
+
         
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>   
